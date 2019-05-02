@@ -1,0 +1,146 @@
+@font-face{
+    font-family: "Lobster";
+    font-style: normal;
+    font-weight: 400;
+    src: local('lobster'), url(../fonts/lobster.woff) format('woff');
+}
+
+.regraFontFace{
+    font-family: "Lobster", cursive;
+}
+
+.distribuicaoDeFontes {
+    font-family: 'Press Start 2P', cursive;
+}
+
+@font-face {
+    font-family: 'IconicFill';
+    src: url('iconic_fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.iconesPorFontes::after{
+    content: '\2192';
+    font-family: 'IconicFill';
+    margin-left: 10px;
+}
+h1.iconesPorFontes {
+    color: blue;
+}
+
+.icon-ok{
+    color: #489D00;
+}
+.icon-ok::before{
+    content: "\2714";
+    font-family: 'IconicFill';
+    margin-right: 10px;
+}
+.icon-invalid{
+    color: #990000;
+}
+.icon-invalid::before{
+    content: "\2718";
+    font-family: 'IconicFill';
+    margin-right: 10px;
+}
+
+.tnt{
+    border-radius: 50%;
+    border: 5px solid black;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.counter{
+    background-color: black;
+    border-top-left-radius: 25px 10px;
+    border-top-right-radius: 25px 10px;
+    color: white;
+    display: block;
+    font-size: 1.7em;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+div.cloud{
+    background-color: cyan;
+    width: 50px;
+    height: 10px;
+    padding: 20px 50px;
+}
+span.cloud{
+    background-color: #FFF;
+    border-radius: 48px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    width: 48px;
+}
+
+.cloud::before, .cloud::after {
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    height: 14px;
+    position: absolute;
+    right: 7px;
+    top: -6px;
+    width: 14px;
+}
+.cloud::after {
+    background-color: white;
+    height: 23px;
+    left: 7px;
+    right: auto;
+    top: -10px;
+    width: 23px;
+}
+
+div.goldenGate figure{
+    position: relative;
+}
+
+div.goldenGate img{
+    display: block;
+}
+
+div.goldenGate figcaption{
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    bottom: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    position: absolute;
+    width: 300px;
+}
+
+div.transparenciaEBordas ul {
+    background-color: blue;
+    color: white;
+    height: 35px;
+    list-style:none;
+    padding: 0;
+    width: 210px;
+    border: 1px solid rgba(0, 0, 0, 0.3)
+}
+div.transparenciaEBordas li {
+    float: left;
+    line-height: 35px;
+    font-size: 0.9em;
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+div.transparenciaEBordas li:first-child{
+    border-left: none;
+}
+div.transparenciaEBordas li:last-child{
+    border-right: none;
+}
