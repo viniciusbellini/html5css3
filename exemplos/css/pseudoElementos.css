@@ -5,7 +5,7 @@ section {
     width: 400px;
 }
 
-h1 {
+section h1 {
     background-color: #990000;
     color: #FFF;
     font-size: 1.2em;
@@ -16,7 +16,7 @@ h1 {
     width: 420px;
 }
 
-h1::before{
+section h1::before{
     border-color: transparent #7C0000 #7C0000 transparent;
     border-style: solid;
     border-width: 5px;
@@ -26,7 +26,7 @@ h1::before{
     top: -10px;
 }
 
-h1::after{
+section h1::after{
     border-color: transparent transparent #7C0000 #7C0000;
     border-style: solid;
     border-width: 5px;
@@ -35,6 +35,17 @@ h1::after{
     position: absolute;
     top: -10px;
 }
+
+.seletores a {
+    text-decoration: underline !important;
+}
+.seletores a [href]::after { 
+    content: " (" attr(href) ")"; 
+}
+.seletores a [href^="javascript:"]::after, a[href^="#"]::after {
+     content: ""; 
+}
+
 
 .help {
     background-color: #F1EFE6;
@@ -71,4 +82,51 @@ blockquote::before {
 }
 blockquote::after {
     content: "\201D";
+}
+
+.button { 
+    background-color: #999999; 
+    color: white; 
+    display: inline-block; 
+    font-weight: bold; 
+    padding: 0.5em 1em; 
+    text-decoration: none; 
+}
+.primary-button { 
+    background-color: #389739; 
+}
+.big-button { 
+    font-size: 1.1em; 
+}
+.small-button { 
+    font-size: 0.9em; 
+}
+
+table{
+    width: 500px;
+}
+
+td {
+    border: 1px dotted #666;
+    padding: 5px;
+}
+td a {
+    color: #3B5998;
+}
+
+.expense, .profit, .actions{
+    text-align: right;
+}
+.expense, .profit{
+    font-weight: bold;
+}
+.expense{color: red;}
+.profit{color: green;}
+
+.actions a {
+    font-size: 0.9em;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3B5998;
+    text-decoration: none;
 }

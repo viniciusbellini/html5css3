@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="D:\Desenvolvimento\html5css3\css\normalize.css">
         <link rel="stylesheet" href="D:\Desenvolvimento\html5css3\exemplos\css\pseudoElementos.css">
+
+        <!-- O atributo "media" indica que estes estilos só devem ser aplicado para impressões --> 
+        <link href="D:\Desenvolvimento\html5css3\exemplos\css\print.css" media="print">
     </head>
     
     <section>
@@ -23,4 +26,37 @@
     <blockquote>
         O problema com citações na Internet é que você não pode confirmar sua veracidade.
     </blockquote>
+
+    <!--Forma de organizar os seletores css-->
+    <div class='seletores'>
+        <a href="#" class='button primary-button big-button'>Enviar mensagem</a>
+        <a href="#" class='button small-button'>Cancelar</a>
+    </div>    
+    <div class='page-break'>
+        <h2>Teste page-break</h2>
+    </div>
+    
+    <div class='impressao'>
+        <h1 class='impressao'>Transações de Maio, 2011</h1>
+        <table>
+            <tr>
+                <td>
+                    <a href='http://exemplo/transacao/1'>Transação 1</a>
+                </td>
+                <td class='expense'>R$ 100,00</td>
+                <td class='actions'>
+                    <a href="http://exemplo/transacao/1/editar">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href='http://exemplo/transacao/2'>Transação 2</a>
+                </td>
+                <td class='profit'>R$ 200,00</td>
+                <td class='actions'>
+                    <a href="http://exemplo/transacao/2/editar">Editar</a>
+                </td>
+            </tr>
+        </table>
+    </section>
 </html>

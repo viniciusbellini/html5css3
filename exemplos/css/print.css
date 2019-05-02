@@ -1,0 +1,17 @@
+@media print { 
+    /*a) Este CSS só será aplicado quando a página for impressa 
+        b) O uso do !important é para garantir que esta regra sobrescreva qualquer outro seletor mais específico do seu CSS padrão
+    */ 
+    *{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-shadow: none !important;
+    }  
+
+    *.page-break{
+        display: block;
+        page-break-before: always;
+    }
+}
